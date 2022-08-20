@@ -30,7 +30,4 @@ Maui.ApplicationWindow
             id: _imagePage
         }
     }
-
-
-
 }

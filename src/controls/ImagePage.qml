@@ -12,12 +12,14 @@ Maui.Page
     id: control
     showCSDControls: true
     headBar.background: null
+    autoHideHeader: true
+//    floatingHeader: autoHideHeader
     padding: Maui.Style.space.medium
 
     background: Rectangle
     {
-        readonly property bool isDark : Maui.ColorUtils.brightnessForColor(_imgColors.background) === Maui.ColorUtils.Dark
-        color: Maui.ColorUtils.tintWithAlpha(Maui.Theme.backgroundColor, _imgColors.background, isDark ? 0.2 : 0.4)
+        readonly property bool isDark : Maui.ColorUtils.brightnessForColor(_imgColors.dominant) === Maui.ColorUtils.Dark
+        color: Maui.ColorUtils.tintWithAlpha(Maui.Theme.backgroundColor, _imgColors.dominant, isDark ? 0.2 : 0.4)
     }
 
     Component
@@ -92,152 +94,179 @@ Maui.Page
                     Layout.preferredWidth: 200
                     Layout.fillWidth: !_grid.isWide
 
-                    Maui.IconItem
+
+                    Item
                     {
-                        id: _img
+
                         implicitHeight: 200
                         Layout.fillWidth: true
-                        imageSource: "file:///home/camilo/Downloads/Elizabeth Pryton/EP 1335_e.jpg"
-                        maskRadius: Maui.Style.radiusV
-                    }
-
-                    Button
-                    {
-                        Layout.alignment: Qt.AlignCenter
-//                        Layout.fillWidth: true
-                        text: i18n("Select")
-                        onClicked: openImage()
-                    }
-                }
-
-
-                Maui.SettingsSection
-                {
-                    Layout.fillWidth: true
-                    //                Layout.minimumWidth: 300
-                    title: "Colors"
-                    Maui.SettingTemplate
-                    {
-                        label1.text: i18n("Palette")
-
-                        Flow
+                        Maui.IconItem
                         {
-                            spacing: Maui.Style.space.medium
+                            id: _img
+                            anchors.fill:parent
+                            imageSource: "file:///home/camilo/Downloads/Elizabeth Pryton/EP 1335_e.jpg"
+                            maskRadius: Maui.Style.radiusV
+                        }
 
-                            width: parent.parent.width
+                        DropArea
+                        {
+                            id: _dropArea
+                            anchors.fill: parent
+                            onDropped: _img.imageSource = drop.urls[0]
 
-                            Repeater
+                            Rectangle
                             {
-                                model:_imgColors.palette
+                                anchors.fill: parent
+                                radius: Maui.Style.radiusV
+                                visible: _dropArea.containsDrag
+                                color: Maui.Theme.backgroundColor
+                            }
+                        }
+                    }
 
-                                delegate: ColorButton
+                Button
+                {
+                    Layout.alignment: Qt.AlignCenter
+                    //                        Layout.fillWidth: true
+                    text: i18n("Select")
+                    onClicked: openImage()
+                }
+            }
+
+
+            Maui.SettingsSection
+            {
+                Layout.fillWidth: true
+                //                Layout.minimumWidth: 300
+                title: "Colors"
+                Maui.SettingTemplate
+                {
+                    label1.text: i18n("Palette")
+
+                    Flow
+                    {
+                        spacing: Maui.Style.space.medium
+
+                        width: parent.parent.width
+
+                        Repeater
+                        {
+                            model:_imgColors.palette
+
+                            delegate: ColorButton
+                            {
+
+                                color: modelData.color
+                                text: modelData.color
+
+                                onClicked:
                                 {
-
-                                    color: modelData.color
-                                    text: modelData.color
+                                    Maui.Handy.copyTextToClipboard(modelData.color)
+                                    root.notify("love", "Color copied","color copied" )
                                 }
                             }
                         }
                     }
+                }
 
-                    Maui.SettingTemplate
+                Maui.SettingTemplate
+                {
+                    label1.text: i18n("Colors")
+
+                    Flow
                     {
-                        label1.text: i18n("Colors")
-
-                        Flow
+                        width: parent.parent.width
+                        spacing: Maui.Style.space.medium
+                        ColorButton
                         {
-                            width: parent.parent.width
-                            spacing: Maui.Style.space.medium
-                            ColorButton
-                            {
-                                color: _imgColors.background
-                                text: i18n("Background")
+                            color: _imgColors.background
+                            text: i18n("Background")
 
-                            }
+                        }
 
-                            ColorButton
-                            {
-                                color: _imgColors.foreground
-                                text: i18n("Foreground")
+                        ColorButton
+                        {
+                            color: _imgColors.foreground
+                            text: i18n("Foreground")
 
-                            }
+                        }
 
-                            ColorButton
-                            {
-                                color: _imgColors.dominant
-                                text: i18n("Dominant")
+                        ColorButton
+                        {
+                            color: _imgColors.dominant
+                            text: i18n("Dominant")
 
-                            }
+                        }
 
-                            ColorButton
-                            {
-                                color: _imgColors.highlight
-                                text: i18n("Highlight")
+                        ColorButton
+                        {
+                            color: _imgColors.highlight
+                            text: i18n("Highlight")
 
-                            }
+                        }
 
-                            ColorButton
-                            {
-                                color: _imgColors.average
-                                text: i18n("Average")
+                        ColorButton
+                        {
+                            color: _imgColors.average
+                            text: i18n("Average")
 
-                            }
                         }
                     }
+                }
 
 
-                    Maui.SettingTemplate
+                Maui.SettingTemplate
+                {
+                    label1.text: i18n("Others")
+
+                    Flow
                     {
-                        label1.text: i18n("Others")
+                        width: parent.parent.width
+                        spacing: Maui.Style.space.medium
 
-                        Flow
+                        ColorButton
                         {
-                            width: parent.parent.width
-                            spacing: Maui.Style.space.medium
+                            color: _imgColors.closestToWhite
+                            text: i18n("Light")
 
-                            ColorButton
-                            {
-                                color: _imgColors.closestToWhite
-                                text: i18n("Light")
+                        }
+                        ColorButton
+                        {
+                            color: _imgColors.closestToBlack
+                            text: i18n("Dark")
 
-                            }
-                            ColorButton
-                            {
-                                color: _imgColors.closestToBlack
-                                text: i18n("Dark")
-
-                            }
                         }
                     }
                 }
             }
         }
-
     }
-    Maui.Holder
+
+}
+Maui.Holder
+{
+    anchors.fill: parent
+    visible: _img.imageSource.length === 0
+
+    emoji: Maui.App.iconName
+    title: Maui.App.about.displayName
+    body: Maui.App.about.shortDescription
+
+    actions: Action
     {
-        anchors.fill: parent
-        visible: _img.imageSource.length === 0
-
-        emoji: Maui.App.iconName
-        title: Maui.App.about.displayName
-        body: Maui.App.about.shortDescription
-
-        actions: Action
-        {
-            text: i18n("Open...")
-            onTriggered: openImage()
-        }
+        text: i18n("Open...")
+        onTriggered: openImage()
     }
+}
 
-    function openImage()
-    {
-        _dialogLoader.sourceComponent = _fileDialogComponent
-        dialog.mode = dialog.modes.OPEN
-        dialog.singleSelection = true
-        dialog.callback = (urls) => { console.log("files selected:", urls); _img.imageSource = urls[0]}
+function openImage()
+{
+    _dialogLoader.sourceComponent = _fileDialogComponent
+    dialog.mode = dialog.modes.OPEN
+    dialog.singleSelection = true
+    dialog.callback = (urls) => { console.log("files selected:", urls); _img.imageSource = urls[0]}
 
-        dialog.settings.filterType = FM.FMList.IMAGE
-        dialog.open()
-    }
+    dialog.settings.filterType = FM.FMList.IMAGE
+    dialog.open()
+}
 }
