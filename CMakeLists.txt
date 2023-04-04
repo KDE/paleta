@@ -34,7 +34,7 @@ find_package(QT NAMES Qt6 Qt5 COMPONENTS Core Quick Widgets REQUIRED)
 
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core Quick Widgets REQUIRED)
 
-find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS I18n CoreAddons)
+find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS I18n CoreAddons GuiAddons)
 
 find_package(Qt5QuickCompiler)
 set_package_properties(Qt5QuickCompiler PROPERTIES

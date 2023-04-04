@@ -5,6 +5,7 @@
 
 set(project_SRCS
     code/main.cpp
+    code/colorutils.cpp
     assets/assets.qrc
     )
 
@@ -25,7 +26,7 @@ target_link_libraries(${PROJECT_NAME}
     Qt${QT_VERSION_MAJOR}::Core
     Qt${QT_VERSION_MAJOR}::Quick
     Qt${QT_VERSION_MAJOR}::Widgets
-
+    KF5::GuiAddons
     KF5::CoreAddons
     KF5::I18n)
 

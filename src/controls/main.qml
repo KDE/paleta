@@ -23,7 +23,7 @@ Maui.ApplicationWindow
     {
         id: _stackView
         anchors.fill: parent
-        padding: Maui.Style.space.medium
+        padding: 0
 
         initialItem:  ImagePage
         {

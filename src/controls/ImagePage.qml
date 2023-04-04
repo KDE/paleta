@@ -7,14 +7,15 @@ import QtQuick.Layouts 1.12
 import org.mauikit.controls 1.3 as Maui
 import org.mauikit.filebrowsing 1.3 as FM
 
+import org.kde.paleta 1.0 as Paleta
+
 Maui.Page
 {
     id: control
     showCSDControls: true
     headBar.background: null
     autoHideHeader: true
-//    floatingHeader: autoHideHeader
-    padding: Maui.Style.space.medium
+    property real contrastRatio : Maui.ColorUtils.contrastRatio(_imgColors.foreground, _imgColors.background)
 
     background: Rectangle
     {
@@ -68,7 +69,8 @@ Maui.Page
     {
         width: Math.min(parent.width, 800)
         anchors.centerIn: parent
-        height: Math.min(contentHeight, parent.height)
+        height: Math.min(contentHeight+ topPadding +bottomPadding, parent.height)
+        padding: Maui.Style.space.medium
 
         Flickable
         {
@@ -93,7 +95,6 @@ Maui.Page
                     spacing: Maui.Style.space.medium
                     Layout.preferredWidth: 200
                     Layout.fillWidth: !_grid.isWide
-
 
                     Item
                     {
@@ -124,117 +125,224 @@ Maui.Page
                         }
                     }
 
-                Button
-                {
-                    Layout.alignment: Qt.AlignCenter
-                    //                        Layout.fillWidth: true
-                    text: i18n("Select")
-                    onClicked: openImage()
-                }
-            }
-
-
-            Maui.SettingsSection
-            {
-                Layout.fillWidth: true
-                //                Layout.minimumWidth: 300
-                title: "Colors"
-                Maui.SettingTemplate
-                {
-                    label1.text: i18n("Palette")
-
-                    Flow
+                    Button
                     {
-                        spacing: Maui.Style.space.medium
+                        Layout.alignment: Qt.AlignCenter
+                        //                        Layout.fillWidth: true
+                        text: i18n("Select")
+                        onClicked: openImage()
+                    }
+                }
 
-                        width: parent.parent.width
 
-                        Repeater
+                Maui.SectionGroup
+                {
+                    Layout.fillWidth: true
+                    //                Layout.minimumWidth: 300
+                    title: "Colors"
+
+                    Maui.SectionItem
+                    {
+                        label1.text: i18n("Palette")
+                        columns: 1
+
+                        Flow
                         {
-                            model:_imgColors.palette
+                            spacing: Maui.Style.space.medium
+                            Layout.fillWidth: true
 
-                            delegate: ColorButton
+                            Repeater
                             {
+                                model:_imgColors.palette
 
-                                color: modelData.color
-                                text: modelData.color
-
-                                onClicked:
+                                delegate: ColorButton
                                 {
-                                    Maui.Handy.copyTextToClipboard(modelData.color)
-                                    root.notify("love", "Color copied","color copied" )
+
+                                    color: modelData.color
+                                    text: modelData.color
+
+                                    onClicked:
+                                    {
+                                        Maui.Handy.copyTextToClipboard(modelData.color)
+                                        root.notify("color", "Color copied1","color copied", () => {console.log(index)}, 2000, i18n("Copy"))
+
+                                    }
                                 }
+                            }
+                        }
+                    }
+
+                    Maui.SectionItem
+                    {
+                        label1.text: i18n("Colors")
+                        columns: 1
+
+                        Flow
+                        {
+                            Layout.fillWidth: true
+                            spacing: Maui.Style.space.medium
+
+                            ColorButton
+                            {
+                                color: _imgColors.background
+                                text: i18n("Background")
+                            }
+
+                            ColorButton
+                            {
+                                color: _imgColors.foreground
+                                text: i18n("Foreground")
+
+                            }
+
+                            ColorButton
+                            {
+                                color: _imgColors.dominant
+                                text: i18n("Dominant")
+
+                            }
+
+                            ColorButton
+                            {
+                                color: _imgColors.highlight
+                                text: i18n("Highlight")
+
+                            }
+
+                            ColorButton
+                            {
+                                color: _imgColors.average
+                                text: i18n("Average")
+
+                            }
+                        }
+                    }
+
+
+                    Maui.SectionItem
+                    {
+                        label1.text: i18n("Others")
+                        columns: 1
+                        Flow
+                        {
+                            Layout.fillWidth: true
+                            spacing: Maui.Style.space.medium
+
+                            ColorButton
+                            {
+                                color: _imgColors.closestToWhite
+                                text: i18n("Light")
+
+                            }
+                            ColorButton
+                            {
+                                color: _imgColors.closestToBlack
+                                text: i18n("Dark")
+
                             }
                         }
                     }
                 }
 
-                Maui.SettingTemplate
+                Maui.SectionGroup
                 {
-                    label1.text: i18n("Colors")
+                    Layout.fillWidth: true
+                    Layout.columnSpan: _grid.columns
+                    title: i18n("Contrast Ratio")
 
-                    Flow
+
+                    Pane
                     {
-                        width: parent.parent.width
-                        spacing: Maui.Style.space.medium
-                        ColorButton
+                        Layout.fillWidth: true
+                        implicitWidth: _layout.implicitWidth + leftPadding + rightPadding
+                        implicitHeight: _layout.implicitHeight + topPadding + bottomPadding
+
+                        background: Rectangle
                         {
+                            radius: Maui.Style.radiusV
                             color: _imgColors.background
-                            text: i18n("Background")
-
                         }
 
-                        ColorButton
+                        contentItem: ColumnLayout
                         {
-                            color: _imgColors.foreground
-                            text: i18n("Foreground")
+                            id: _layout
+                            spacing: Maui.Style.space.medium
 
-                        }
+                            Label
+                            {
+                                Layout.fillWidth: true
+                                text: i18n("Hello World! This is an example text.")
+                                font: Maui.Style.h1Font
+                                color: _imgColors.foreground
+                                wrapMode: Text.Wrap
+                                elide: Text.ElideRight
+                                verticalAlignment: Qt.AlignVCenter
+                            }
 
-                        ColorButton
-                        {
-                            color: _imgColors.dominant
-                            text: i18n("Dominant")
+                            Label
+                            {
+                                Layout.fillWidth: true
 
-                        }
-
-                        ColorButton
-                        {
-                            color: _imgColors.highlight
-                            text: i18n("Highlight")
-
-                        }
-
-                        ColorButton
-                        {
-                            color: _imgColors.average
-                            text: i18n("Average")
-
+                                text: i18n("WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text. .")
+                                color: _imgColors.foreground
+                                wrapMode: Text.Wrap
+                                elide: Text.ElideRight
+                                verticalAlignment: Qt.AlignVCenter
+                            }
                         }
                     }
-                }
 
-
-                Maui.SettingTemplate
-                {
-                    label1.text: i18n("Others")
-
-                    Flow
+                    Maui.SectionItem
                     {
-                        width: parent.parent.width
-                        spacing: Maui.Style.space.medium
+                        label1.text: i18n("Contrast Ratio")
+                        label2.text: contrastRatio
+                    }
 
-                        ColorButton
+                    Maui.SectionItem
+                    {
+                        label1.text: "Checks"
+
+                        columns: 1
+
+                        Flow
                         {
-                            color: _imgColors.closestToWhite
-                            text: i18n("Light")
+                            Layout.fillWidth: true
+                            spacing: Maui.Style.space.medium
 
-                        }
-                        ColorButton
-                        {
-                            color: _imgColors.closestToBlack
-                            text: i18n("Dark")
+                            Maui.Chip
+                            {
+                                text: i18n("AA Small Text")
+                                icon.name: passes ? "checkbox" : "error"
+                                property bool passes : contrastRatio > 4.5
+                                color: passes ? Maui.Theme.positiveBackgroundColor : Maui.Theme.negativeBackgroundColor
+                            }
 
+                            Maui.Chip
+                            {
+                                text: i18n("AAA Small Text")
+                                icon.name: passes ? "checkbox" : "error"
+
+                                property bool passes : contrastRatio > 7.0
+                                color: passes ? Maui.Theme.positiveBackgroundColor : Maui.Theme.negativeBackgroundColor
+                            }
+
+                            Maui.Chip
+                            {
+                                text: i18n("AA Large Text")
+                                icon.name: passes ? "checkbox" : "error"
+
+                                property bool passes : contrastRatio > 3
+                                color: passes ? Maui.Theme.positiveBackgroundColor : Maui.Theme.negativeBackgroundColor
+                            }
+
+                            Maui.Chip
+                            {
+                                text: i18n("AAA Large Text")
+                                icon.name: passes ? "checkbox" : "error"
+
+                                property bool passes : contrastRatio > 4.5
+                                color: passes ? Maui.Theme.positiveBackgroundColor : Maui.Theme.negativeBackgroundColor
+                            }
                         }
                     }
                 }
@@ -242,31 +350,30 @@ Maui.Page
         }
     }
 
-}
-Maui.Holder
-{
-    anchors.fill: parent
-    visible: _img.imageSource.length === 0
-
-    emoji: Maui.App.iconName
-    title: Maui.App.about.displayName
-    body: Maui.App.about.shortDescription
-
-    actions: Action
+    Maui.Holder
     {
-        text: i18n("Open...")
-        onTriggered: openImage()
+        anchors.fill: parent
+        visible: _img.imageSource.length === 0
+
+        emoji: Maui.App.iconName
+        title: Maui.App.about.displayName
+        body: Maui.App.about.shortDescription
+
+        actions: Action
+        {
+            text: i18n("Open...")
+            onTriggered: openImage()
+        }
     }
-}
 
-function openImage()
-{
-    _dialogLoader.sourceComponent = _fileDialogComponent
-    dialog.mode = dialog.modes.OPEN
-    dialog.singleSelection = true
-    dialog.callback = (urls) => { console.log("files selected:", urls); _img.imageSource = urls[0]}
+    function openImage()
+    {
+        _dialogLoader.sourceComponent = _fileDialogComponent
+        dialog.mode = dialog.modes.OPEN
+        dialog.singleSelection = true
+        dialog.callback = (urls) => { console.log("files selected:", urls); _img.imageSource = urls[0]}
 
-    dialog.settings.filterType = FM.FMList.IMAGE
-    dialog.open()
-}
+        dialog.settings.filterType = FM.FMList.IMAGE
+        dialog.open()
+    }
 }

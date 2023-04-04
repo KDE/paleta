@@ -1,6 +1,8 @@
 #include <QApplication>
 #include <QQmlApplicationEngine>
 #include <QCommandLineParser>
+#include <QQmlContext>
+
 #include <QDate>
 #include <QIcon>
 
@@ -10,6 +12,8 @@
 #include <KI18n/KLocalizedString>
 
 #include "../project_version.h"
+
+#include "colorutils.h"
 
 //Useful for setting quickly an app template
 #define ORG_NAME "Maui"
@@ -59,6 +63,13 @@ int main(int argc, char *argv[])
         if (!obj && url == objUrl)
             QCoreApplication::exit(-1);
     }, Qt::QueuedConnection);
+
+    engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
+    qmlRegisterSingletonType<ColorUtils>(PROJECT_URI, 1, 0, "ColorUtils", [](QQmlEngine *, QJSEngine *) -> QObject*
+      {
+          return new ColorUtils;
+      });
+
     engine.load(url);
 
     return app.exec();
