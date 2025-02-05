@@ -164,7 +164,7 @@ Maui.Page
                                     onClicked:
                                     {
                                         Maui.Handy.copyTextToClipboard(modelData.color)
-                                        root.notify("color", "Color copied1","color copied", () => {console.log(index)}, 2000, i18n("Copy"))
+                                        root.notify("color", "Color copied", modelData.color, () => {console.log(index)}, i18n("Copy"))
 
                                     }
                                 }
