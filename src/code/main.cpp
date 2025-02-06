@@ -6,10 +6,10 @@
 #include <QDate>
 #include <QIcon>
 
-#include <MauiKit/Core/mauiapp.h>
+#include <MauiKit4/Core/mauiapp.h>
 
 #include <KAboutData>
-#include <KI18n/KLocalizedString>
+#include <KLocalizedString>
 
 #include "../project_version.h"
 
@@ -27,23 +27,26 @@
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
-
     QApplication app(argc, argv);
 
     app.setOrganizationName(QStringLiteral(ORG_NAME));
-    app.setWindowIcon(QIcon(":/logo.png"));
+    app.setWindowIcon(QIcon(QStringLiteral(":/paleta.png")));
 
-    MauiApp::instance()->setIconName("qrc:/logo.svg");
+    MauiApp::instance()->setIconName(QStringLiteral("qrc:/paleta.svg"));
 
     KLocalizedString::setApplicationDomain(COMPONENT_NAME);
 
-    KAboutData about(QStringLiteral(COMPONENT_NAME), i18n(PROJECT_NAME), PROJECT_VERSION_STRING, i18n(PROJECT_DESCRIPTION),
-                     KAboutLicense::LGPL_V3, QString("© %1-%2 %3 Development Team").arg(PROJECT_YEAR, QString::number(QDate::currentDate().year()), ORG_NAME), QString(GIT_BRANCH) + "/" + QString(GIT_COMMIT_HASH));
+    KAboutData about(QStringLiteral(COMPONENT_NAME),
+                     QStringLiteral(PROJECT_NAME),
+                     QStringLiteral(PROJECT_VERSION_STRING),
+                     i18n(PROJECT_DESCRIPTION),
+                     KAboutLicense::LGPL_V3,
+                     QStringLiteral(APP_COPYRIGHT_NOTICE),
+                     QString(GIT_BRANCH) + "/" + QString(GIT_COMMIT_HASH));
 
     about.addAuthor(i18n("Camilo Higuita"), i18n("Developer"), QStringLiteral("milo.h@aol.com"));
 
-    about.setHomepage(PROJECT_PAGE);
+    about.setHomepage(QStringLiteral(PROJECT_PAGE));
     about.setProductName(PRODUCT_NAME);
     about.setBugAddress(REPORT_PAGE);
     about.setOrganizationDomain(PROJECT_URI);
@@ -57,7 +60,7 @@ int main(int argc, char *argv[])
     about.processCommandLine(&parser);
 
     QQmlApplicationEngine engine;
-    const QUrl url(QStringLiteral("qrc:/main.qml"));
+    const QUrl url(QStringLiteral("qrc:/app/maui/paleta/controls/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
                      &app, [url](QObject *obj, const QUrl &objUrl) {
         if (!obj && url == objUrl)

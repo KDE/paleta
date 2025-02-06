@@ -1,21 +1,21 @@
-import QtQuick 2.0
-import QtQuick 2.15
-import QtQml 2.15
-import QtQuick.Controls 2.15
-import QtQuick.Layouts 1.12
+import QtQuick
+import QtQuick
+import QtQml
+import QtQuick.Controls
+import QtQuick.Layouts
 
-import org.mauikit.controls 1.3 as Maui
-import org.mauikit.filebrowsing 1.3 as FM
+import org.mauikit.controls as Maui
+import org.mauikit.filebrowsing as FM
 
-import org.kde.paleta 1.0 as Paleta
+import org.kde.paleta as Paleta
 
 Maui.Page
 {
     id: control
-    showCSDControls: true
+    Maui.Controls.showCSD: true
     headBar.background: null
     autoHideHeader: true
-    property real contrastRatio : Maui.ColorUtils.contrastRatio(_imgColors.foreground, _imgColors.background)
+    property real contrastRatio : Paleta.ColorUtils.contrastRatio(_imgColors.foreground, _imgColors.background)
 
     background: Rectangle
     {
@@ -101,12 +101,14 @@ Maui.Page
 
                         implicitHeight: 200
                         Layout.fillWidth: true
+
                         Maui.IconItem
                         {
                             id: _img
                             anchors.fill:parent
                             imageSource: "file:///home/camilo/Downloads/Elizabeth Pryton/EP 1335_e.jpg"
                             maskRadius: Maui.Style.radiusV
+                            fillMode: Image.PreserveAspectCrop
                         }
 
                         DropArea
@@ -144,7 +146,6 @@ Maui.Page
                     Maui.SectionItem
                     {
                         label1.text: i18n("Palette")
-                        columns: 1
 
                         Flow
                         {
@@ -175,7 +176,6 @@ Maui.Page
                     Maui.SectionItem
                     {
                         label1.text: i18n("Colors")
-                        columns: 1
 
                         Flow
                         {
@@ -222,7 +222,6 @@ Maui.Page
                     Maui.SectionItem
                     {
                         label1.text: i18n("Others")
-                        columns: 1
                         Flow
                         {
                             Layout.fillWidth: true
@@ -302,8 +301,6 @@ Maui.Page
                     {
                         label1.text: "Checks"
 
-                        columns: 1
-
                         Flow
                         {
                             Layout.fillWidth: true
@@ -369,11 +366,18 @@ Maui.Page
     function openImage()
     {
         _dialogLoader.sourceComponent = _fileDialogComponent
-        dialog.mode = dialog.modes.OPEN
-        dialog.singleSelection = true
-        dialog.callback = (urls) => { console.log("files selected:", urls); _img.imageSource = urls[0]}
+        dialog.mode = FM.FileDialog.Open
+        // dialog.browser.settings.singleSelection = true
+        dialog.callback = (urls) =>
+                {
 
-        dialog.settings.filterType = FM.FMList.IMAGE
+            console.log("files selected:", urls);
+            _img.imageSource = urls[0]
+            _imgColors.source = String(_img.imageSource).replace("file://", "")
+
+        }
+
+        dialog.browser.settings.filterType = FM.FMList.IMAGE
         dialog.open()
     }
 }

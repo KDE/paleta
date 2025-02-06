@@ -3,31 +3,37 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
+remove_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_STRICT_ITERATORS -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_URL_CAST_FROM_STRING)
+
 set(project_SRCS
     code/main.cpp
-    code/colorutils.cpp
-    assets/assets.qrc
-    )
+    code/colorutils.cpp)
 
-qtquick_compiler_add_resources(project_QML_QRC controls/qml.qrc)
+qt_add_resources(project_QRC assets/assets.qrc)
 
-add_executable(${PROJECT_NAME}
+qt_add_executable(${PROJECT_NAME}
     ${project_SRCS}
-    ${project_QML_QRC}
-    )
+    ${project_QRC})
+
+    qt_add_qml_module(${PROJECT_NAME} URI app.maui.paleta
+    NO_PLUGIN
+    QML_FILES
+    controls/main.qml
+    controls/ImagePage.qml
+    controls/ColorButton.qml)
 
 target_compile_definitions(${PROJECT_NAME}
     PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
 
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
-    MauiKit
-
-    Qt${QT_VERSION_MAJOR}::Core
-    Qt${QT_VERSION_MAJOR}::Quick
-    Qt${QT_VERSION_MAJOR}::Widgets
-    KF5::GuiAddons
-    KF5::CoreAddons
-    KF5::I18n)
+    MauiKit4
+    Qt6::Core
+    Qt6::Quick
+    Qt6::Widgets
+    KF6::GuiAddons
+    KF6::CoreAddons
+    KF6::I18n)
 
 install(TARGETS ${PROJECT_NAME} ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+qt_finalize_target(${PROJECT_NAME})

@@ -1,6 +1,6 @@
 <RCC>
     <qresource prefix="/">
-        <file>logo.svg</file>
-        <file>logo.png</file>
+        <file>paleta.svg</file>
+        <file>paleta.png</file>
     </qresource>
 </RCC>

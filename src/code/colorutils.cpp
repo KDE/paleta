@@ -1,7 +1,7 @@
 #include "colorutils.h"
-#include <KGuiAddons/KColorUtils>
+#include <KColorUtils>
 
-ColorUtils::ColorUtils(QObject *parent)
+ColorUtils::ColorUtils(QObject *parent) : QObject(parent)
 {
 
 }
