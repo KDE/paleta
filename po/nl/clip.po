@@ -1,0 +1,142 @@
+# Copyright (C) 2025 This file is copyright:
+# This file is distributed under the same license as the paleta package.
+#
+# SPDX-FileCopyrightText: 2025 Freek de Kruijf <freekdekruijf@kde.nl>
+msgid ""
+msgstr ""
+"Project-Id-Version: paleta\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-02-25 00:39+0000\n"
+"PO-Revision-Date: 2025-02-25 12:09+0100\n"
+"Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 24.12.2\n"
+
+#: src/code/main.cpp:47
+#, kde-format
+msgid "Camilo Higuita"
+msgstr "Camilo Higuita"
+
+#: src/code/main.cpp:47
+#, kde-format
+msgid "Developer"
+msgstr "Ontwikkelaar"
+
+#: src/controls/ImagePage.qml:40
+#, kde-format
+msgid "Settings"
+msgstr "Instellingen"
+
+#: src/controls/ImagePage.qml:46
+#, kde-format
+msgid "About"
+msgstr "Info over"
+
+#: src/controls/ImagePage.qml:134
+#, kde-format
+msgid "Select"
+msgstr "Selecteren"
+
+#: src/controls/ImagePage.qml:148
+#, kde-format
+msgid "Palette"
+msgstr "Palet"
+
+#: src/controls/ImagePage.qml:168
+#, kde-format
+msgid "Copy"
+msgstr "Kopiëren"
+
+#: src/controls/ImagePage.qml:178
+#, kde-format
+msgid "Colors"
+msgstr "Kleuren"
+
+#: src/controls/ImagePage.qml:188
+#, kde-format
+msgid "Background"
+msgstr "Achtergrond"
+
+#: src/controls/ImagePage.qml:194
+#, kde-format
+msgid "Foreground"
+msgstr "Voorgrond"
+
+#: src/controls/ImagePage.qml:201
+#, kde-format
+msgid "Dominant"
+msgstr "Dominant"
+
+#: src/controls/ImagePage.qml:208
+#, kde-format
+msgid "Highlight"
+msgstr "Accentuering"
+
+#: src/controls/ImagePage.qml:215
+#, kde-format
+msgid "Average"
+msgstr "Gemiddeld"
+
+#: src/controls/ImagePage.qml:224
+#, kde-format
+msgid "Others"
+msgstr "Overig"
+
+#: src/controls/ImagePage.qml:233
+#, kde-format
+msgid "Light"
+msgstr "Licht"
+
+#: src/controls/ImagePage.qml:239
+#, kde-format
+msgid "Dark"
+msgstr "Donker"
+
+#: src/controls/ImagePage.qml:250 src/controls/ImagePage.qml:296
+#, kde-format
+msgid "Contrast Ratio"
+msgstr "Contrastverhouding"
+
+#: src/controls/ImagePage.qml:273
+#, kde-format
+msgid "Hello World! This is an example text."
+msgstr "Hello World! Dit is een voorbeeldtekst."
+
+#: src/controls/ImagePage.qml:285
+#, kde-format
+msgid ""
+"WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1 for normal "
+"text and 3:1 for large text. ."
+msgstr ""
+"WCAG 2.0 niveau AA vereist een contrastverhouding van minstens 4.5:1 voor "
+"normale tekst en 3:1 voor grote tekst. ."
+
+#: src/controls/ImagePage.qml:311
+#, kde-format
+msgid "AA Small Text"
+msgstr "AA kleine tekst"
+
+#: src/controls/ImagePage.qml:319
+#, kde-format
+msgid "AAA Small Text"
+msgstr "AAA kleine tekst"
+
+#: src/controls/ImagePage.qml:328
+#, kde-format
+msgid "AA Large Text"
+msgstr "AA grote tekst"
+
+#: src/controls/ImagePage.qml:337
+#, kde-format
+msgid "AAA Large Text"
+msgstr "AAA grote tekst"
+
+#: src/controls/ImagePage.qml:361
+#, kde-format
+msgid "Open..."
+msgstr "Openen..."
