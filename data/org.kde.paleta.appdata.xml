@@ -7,6 +7,7 @@
   <name xml:lang="ca">Paleta</name>
   <name xml:lang="ca-valencia">Paleta</name>
   <name xml:lang="es">Paleta</name>
+  <name xml:lang="fr">Paleta</name>
   <name xml:lang="he">Paleta</name>
   <name xml:lang="ka">Paleta</name>
   <name xml:lang="nl">Paleta</name>
@@ -18,6 +19,7 @@
   <summary xml:lang="ca">Utilitats de color</summary>
   <summary xml:lang="ca-valencia">Utilitats de color</summary>
   <summary xml:lang="es">Utilidades de color</summary>
+  <summary xml:lang="fr">Utilitaires de couleurs</summary>
   <summary xml:lang="he">כלי עזר לצבעים</summary>
   <summary xml:lang="ka">ფერის ხელსაწყოები</summary>
   <summary xml:lang="nl">Hulpmiddelen voor kleur</summary>
@@ -30,6 +32,7 @@
     <p xml:lang="ca">Conjunt d'utilitats de color per al disseny d'IU.</p>
     <p xml:lang="ca-valencia">Conjunt d'utilitats de color per al disseny d'IU.</p>
     <p xml:lang="es">Conjunto de utilidades de color para diseño de interfaces de usuario.</p>
+    <p xml:lang="fr">Ensemble d'utilitaires de couleurs pour la conception de l'interface utilisateur.</p>
     <p xml:lang="he">הגדרת כלי עזר לצבעים לעיצוב ממשק משתמש.</p>
     <p xml:lang="ka">ფერის ხელსაწყოების ნაკრები ინტერფეისის დიზაინისთვის.</p>
     <p xml:lang="nl">Set van hulpmiddelen voor kleur voor ontwerpen van UI.</p>
