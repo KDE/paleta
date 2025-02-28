@@ -1,112 +1,112 @@
 # Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the paleta package.
 #
-# SPDX-FileCopyrightText: 2025 Yaron Shahrabani <sh.yaron@gmail.com>
+# SPDX-FileCopyrightText: 2025 Matjaž Jeran <matjaz.jeran@amis.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: paleta\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:40+0000\n"
-"PO-Revision-Date: 2025-02-26 08:41+0200\n"
-"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: צוות התרגום של KDE ישראל\n"
-"Language: he\n"
+"PO-Revision-Date: 2025-02-27 11:07+0100\n"
+"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
-"n % 10 == 0) ? 2 : 3));\n"
 "X-Generator: Lokalize 24.12.2\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
 
 #: src/code/main.cpp:47
 #, kde-format
 msgid "Camilo Higuita"
-msgstr "קמילו היגוויטה"
+msgstr "Camilo Higuita"
 
 #: src/code/main.cpp:47
 #, kde-format
 msgid "Developer"
-msgstr "מפתח"
+msgstr "Razvijalec"
 
 #: src/controls/ImagePage.qml:40
 #, kde-format
 msgid "Settings"
-msgstr "הגדרות"
+msgstr "Nastavitve"
 
 #: src/controls/ImagePage.qml:46
 #, kde-format
 msgid "About"
-msgstr "על אודות"
+msgstr "O programu"
 
 #: src/controls/ImagePage.qml:134
 #, kde-format
 msgid "Select"
-msgstr "בחירה"
+msgstr "Izberi"
 
 #: src/controls/ImagePage.qml:148
 #, kde-format
 msgid "Palette"
-msgstr "לוח צבעים"
+msgstr "Paleta"
 
 #: src/controls/ImagePage.qml:168
 #, kde-format
 msgid "Copy"
-msgstr "העתקה"
+msgstr "Kopiraj"
 
 #: src/controls/ImagePage.qml:178
 #, kde-format
 msgid "Colors"
-msgstr "צבעים"
+msgstr "Barve"
 
 #: src/controls/ImagePage.qml:188
 #, kde-format
 msgid "Background"
-msgstr "רקע"
+msgstr "Ozadje"
 
 #: src/controls/ImagePage.qml:194
 #, kde-format
 msgid "Foreground"
-msgstr "חזית"
+msgstr "Ospredje"
 
 #: src/controls/ImagePage.qml:201
 #, kde-format
 msgid "Dominant"
-msgstr "שולט"
+msgstr "Dominantna"
 
 #: src/controls/ImagePage.qml:208
 #, kde-format
 msgid "Highlight"
-msgstr "הדגשה"
+msgstr "Osvetli"
 
 #: src/controls/ImagePage.qml:215
 #, kde-format
 msgid "Average"
-msgstr "ממוצע"
+msgstr "Povprečje"
 
 #: src/controls/ImagePage.qml:224
 #, kde-format
 msgid "Others"
-msgstr "אחרים"
+msgstr "Ostalo"
 
 #: src/controls/ImagePage.qml:233
 #, kde-format
 msgid "Light"
-msgstr "בהיר"
+msgstr "Svetlo"
 
 #: src/controls/ImagePage.qml:239
 #, kde-format
 msgid "Dark"
-msgstr "כהה"
+msgstr "Temno"
 
 #: src/controls/ImagePage.qml:250 src/controls/ImagePage.qml:296
 #, kde-format
 msgid "Contrast Ratio"
-msgstr "יחס ניגודיות"
+msgstr "Kontrastno razmerje"
 
 #: src/controls/ImagePage.qml:273
 #, kde-format
 msgid "Hello World! This is an example text."
-msgstr "שלום עולם! זה טקסט לדוגמה."
+msgstr "Pozdravljen svet!. To je primer besedila."
 
 #: src/controls/ImagePage.qml:285
 #, kde-format
@@ -114,30 +114,30 @@ msgid ""
 "WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1 for normal "
 "text and 3:1 for large text. ."
 msgstr ""
-"דרגה AA של WCAG 2.0 דורשת יחס ניגודיות של 4.5:1 לפחות לכתב רגיל ו־3:1 לכתב "
-"גדול."
+"WCAG 2.0 level AA zahteva kontrastno razmerje vsaj 4.5:1 za normalno "
+"besedilo in 3:1 za veliko besedilo. ."
 
 #: src/controls/ImagePage.qml:311
 #, kde-format
 msgid "AA Small Text"
-msgstr "כתב קטן AA"
+msgstr "AA Majhno besedilo"
 
 #: src/controls/ImagePage.qml:319
 #, kde-format
 msgid "AAA Small Text"
-msgstr "כתב קטן AAA"
+msgstr "AAA Majhno besedilo"
 
 #: src/controls/ImagePage.qml:328
 #, kde-format
 msgid "AA Large Text"
-msgstr "כתב גדול AA"
+msgstr "AA Veliko besedilo"
 
 #: src/controls/ImagePage.qml:337
 #, kde-format
 msgid "AAA Large Text"
-msgstr "כתב גדול AAA"
+msgstr "AAA Veliko besedilo"
 
 #: src/controls/ImagePage.qml:361
 #, kde-format
 msgid "Open..."
-msgstr "פתיחה..."
+msgstr "Odpri..."
