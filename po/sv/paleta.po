@@ -1,19 +1,21 @@
+# Copyright (C) 2025 This file is copyright:
+# This file is distributed under the same license as the paleta package.
 #
-# SPDX-FileCopyrightText: 2025 Xavier Besnard <xavier.besnard@kde.org>
+# SPDX-FileCopyrightText: 2025 Stefan Asserhäll <stefan.asserhall@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: paleta\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:40+0000\n"
-"PO-Revision-Date: 2025-02-27 10:07+0100\n"
-"Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
-"Language-Team: French <French <kde-francophone@kde.org>>\n"
-"Language: fr\n"
+"PO-Revision-Date: 2025-02-28 19:53+0100\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
+"Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.12.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 24.12.0\n"
 
 #: src/code/main.cpp:47
 #, kde-format
@@ -23,87 +25,87 @@ msgstr "Camilo Higuita"
 #: src/code/main.cpp:47
 #, kde-format
 msgid "Developer"
-msgstr "Développeur"
+msgstr "Utvecklare"
 
 #: src/controls/ImagePage.qml:40
 #, kde-format
 msgid "Settings"
-msgstr "Configuration"
+msgstr "Inställningar"
 
 #: src/controls/ImagePage.qml:46
 #, kde-format
 msgid "About"
-msgstr "À propos"
+msgstr "Om"
 
 #: src/controls/ImagePage.qml:134
 #, kde-format
 msgid "Select"
-msgstr "Sélectionner"
+msgstr "Markera"
 
 #: src/controls/ImagePage.qml:148
 #, kde-format
 msgid "Palette"
-msgstr "Palette"
+msgstr "Palett"
 
 #: src/controls/ImagePage.qml:168
 #, kde-format
 msgid "Copy"
-msgstr "Copier"
+msgstr "Kopiera"
 
 #: src/controls/ImagePage.qml:178
 #, kde-format
 msgid "Colors"
-msgstr "Couleurs"
+msgstr "Färger"
 
 #: src/controls/ImagePage.qml:188
 #, kde-format
 msgid "Background"
-msgstr "Arrière-plan"
+msgstr "Bakgrund"
 
 #: src/controls/ImagePage.qml:194
 #, kde-format
 msgid "Foreground"
-msgstr "Premier plan"
+msgstr "Förgrund"
 
 #: src/controls/ImagePage.qml:201
 #, kde-format
 msgid "Dominant"
-msgstr "Dominante"
+msgstr "Dominerande"
 
 #: src/controls/ImagePage.qml:208
 #, kde-format
 msgid "Highlight"
-msgstr "Surligner"
+msgstr "Markering"
 
 #: src/controls/ImagePage.qml:215
 #, kde-format
 msgid "Average"
-msgstr "Moyenne"
+msgstr "Genomsnitt"
 
 #: src/controls/ImagePage.qml:224
 #, kde-format
 msgid "Others"
-msgstr "Autres"
+msgstr "Övriga"
 
 #: src/controls/ImagePage.qml:233
 #, kde-format
 msgid "Light"
-msgstr "Clair"
+msgstr "Ljus"
 
 #: src/controls/ImagePage.qml:239
 #, kde-format
 msgid "Dark"
-msgstr "Sombre"
+msgstr "Mörk"
 
 #: src/controls/ImagePage.qml:250 src/controls/ImagePage.qml:296
 #, kde-format
 msgid "Contrast Ratio"
-msgstr "Taux de contraste"
+msgstr "Kontrastförhållande"
 
 #: src/controls/ImagePage.qml:273
 #, kde-format
 msgid "Hello World! This is an example text."
-msgstr "Bonjour tout le monde ! Ceci est un exemple de texte."
+msgstr "Hej allesamman! Här är en exempeltext."
 
 #: src/controls/ImagePage.qml:285
 #, kde-format
@@ -111,31 +113,30 @@ msgid ""
 "WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1 for normal "
 "text and 3:1 for large text. ."
 msgstr ""
-"La norme « WCAG 2.0 » niveau « AA » nécessite au moins un taux de contraste "
-"de 4.5:1 dans le cas de texte standard et de 3:1 dans le cas d'un texte en "
-"gros caractères."
+"WCAG 2.0 nivå AA kräver ett kontrastförhållande på minst 4,5:1 för normal "
+"text och 3:1 för stor text."
 
 #: src/controls/ImagePage.qml:311
 #, kde-format
 msgid "AA Small Text"
-msgstr "Petit texte « AA »"
+msgstr "AA liten text"
 
 #: src/controls/ImagePage.qml:319
 #, kde-format
 msgid "AAA Small Text"
-msgstr "Petit texte « AAA »"
+msgstr "AAA liten text"
 
 #: src/controls/ImagePage.qml:328
 #, kde-format
 msgid "AA Large Text"
-msgstr "Grand texte « AA »"
+msgstr "AA stor text"
 
 #: src/controls/ImagePage.qml:337
 #, kde-format
 msgid "AAA Large Text"
-msgstr "Grand texte « AAA »"
+msgstr "AAA stor text"
 
 #: src/controls/ImagePage.qml:361
 #, kde-format
 msgid "Open..."
-msgstr "Ouvrir..."
+msgstr "Öppna..."

@@ -1,109 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the paleta package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# SPDX-FileCopyrightText: 2025 Xavier Besnard <xavier.besnard@kde.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: paleta\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:40+0000\n"
-"PO-Revision-Date: 2025-02-27 10:07+0100\n"
-"Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
-"Language-Team: French <French <kde-francophone@kde.org>>\n"
-"Language: fr\n"
+"PO-Revision-Date: 2025-02-28 02:05+0100\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
+"Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.12.2\n"
+"X-Generator: Poedit 3.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/code/main.cpp:47
 #, kde-format
 msgid "Camilo Higuita"
-msgstr "Camilo Higuita"
+msgstr "კამილო ჰიგუიტა"
 
 #: src/code/main.cpp:47
 #, kde-format
 msgid "Developer"
-msgstr "Développeur"
+msgstr "პროგრამისტი"
 
 #: src/controls/ImagePage.qml:40
 #, kde-format
 msgid "Settings"
-msgstr "Configuration"
+msgstr "მორგება"
 
 #: src/controls/ImagePage.qml:46
 #, kde-format
 msgid "About"
-msgstr "À propos"
+msgstr "შესახებ"
 
 #: src/controls/ImagePage.qml:134
 #, kde-format
 msgid "Select"
-msgstr "Sélectionner"
+msgstr "არჩევა"
 
 #: src/controls/ImagePage.qml:148
 #, kde-format
 msgid "Palette"
-msgstr "Palette"
+msgstr "პალიტრა"
 
 #: src/controls/ImagePage.qml:168
 #, kde-format
 msgid "Copy"
-msgstr "Copier"
+msgstr "კოპირება"
 
 #: src/controls/ImagePage.qml:178
 #, kde-format
 msgid "Colors"
-msgstr "Couleurs"
+msgstr "ფერები"
 
 #: src/controls/ImagePage.qml:188
 #, kde-format
 msgid "Background"
-msgstr "Arrière-plan"
+msgstr "ფონი"
 
 #: src/controls/ImagePage.qml:194
 #, kde-format
 msgid "Foreground"
-msgstr "Premier plan"
+msgstr "წინა პლანი"
 
 #: src/controls/ImagePage.qml:201
 #, kde-format
 msgid "Dominant"
-msgstr "Dominante"
+msgstr "დომინანტი"
 
 #: src/controls/ImagePage.qml:208
 #, kde-format
 msgid "Highlight"
-msgstr "Surligner"
+msgstr "გამოკვეთა"
 
 #: src/controls/ImagePage.qml:215
 #, kde-format
 msgid "Average"
-msgstr "Moyenne"
+msgstr "საშუალო"
 
 #: src/controls/ImagePage.qml:224
 #, kde-format
 msgid "Others"
-msgstr "Autres"
+msgstr "სხვები"
 
 #: src/controls/ImagePage.qml:233
 #, kde-format
 msgid "Light"
-msgstr "Clair"
+msgstr "ღია"
 
 #: src/controls/ImagePage.qml:239
 #, kde-format
 msgid "Dark"
-msgstr "Sombre"
+msgstr "მუქი"
 
 #: src/controls/ImagePage.qml:250 src/controls/ImagePage.qml:296
 #, kde-format
 msgid "Contrast Ratio"
-msgstr "Taux de contraste"
+msgstr "კონტრასტის ფარდობა"
 
 #: src/controls/ImagePage.qml:273
 #, kde-format
 msgid "Hello World! This is an example text."
-msgstr "Bonjour tout le monde ! Ceci est un exemple de texte."
+msgstr "გამარჯობა, კინო! ეს ტექსტი მაგალითია."
 
 #: src/controls/ImagePage.qml:285
 #, kde-format
@@ -111,31 +114,30 @@ msgid ""
 "WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1 for normal "
 "text and 3:1 for large text. ."
 msgstr ""
-"La norme « WCAG 2.0 » niveau « AA » nécessite au moins un taux de contraste "
-"de 4.5:1 dans le cas de texte standard et de 3:1 dans le cas d'un texte en "
-"gros caractères."
+"WCAG 2.0 დონე AA-ს ესაჭიროება კონტრასტის ფარდობა, სულ ცოტა, 4.5:1 ნორმალური "
+"ტექსტისთვის და 3:1 დიდი ტექსტისთვის. ."
 
 #: src/controls/ImagePage.qml:311
 #, kde-format
 msgid "AA Small Text"
-msgstr "Petit texte « AA »"
+msgstr "AA პატარა ტექსტი"
 
 #: src/controls/ImagePage.qml:319
 #, kde-format
 msgid "AAA Small Text"
-msgstr "Petit texte « AAA »"
+msgstr "AAA პატარა ტექსტი"
 
 #: src/controls/ImagePage.qml:328
 #, kde-format
 msgid "AA Large Text"
-msgstr "Grand texte « AA »"
+msgstr "AA დიდი ტექსტი"
 
 #: src/controls/ImagePage.qml:337
 #, kde-format
 msgid "AAA Large Text"
-msgstr "Grand texte « AAA »"
+msgstr "AAA დიდი ტექსტი"
 
 #: src/controls/ImagePage.qml:361
 #, kde-format
 msgid "Open..."
-msgstr "Ouvrir..."
+msgstr "გახსნა..."
