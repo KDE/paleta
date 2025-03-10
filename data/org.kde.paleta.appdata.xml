@@ -7,6 +7,7 @@
   <name xml:lang="ca">Paleta</name>
   <name xml:lang="ca-valencia">Paleta</name>
   <name xml:lang="es">Paleta</name>
+  <name xml:lang="fi">Paleta</name>
   <name xml:lang="fr">Paleta</name>
   <name xml:lang="gl">Paleta</name>
   <name xml:lang="he">Paleta</name>
@@ -24,6 +25,7 @@
   <summary xml:lang="ca">Utilitats de color</summary>
   <summary xml:lang="ca-valencia">Utilitats de color</summary>
   <summary xml:lang="es">Utilidades de color</summary>
+  <summary xml:lang="fi">Värityökaluja</summary>
   <summary xml:lang="fr">Utilitaires de couleurs</summary>
   <summary xml:lang="gl">Ferramentas de cores</summary>
   <summary xml:lang="he">כלי עזר לצבעים</summary>
@@ -42,6 +44,7 @@
     <p xml:lang="ca">Conjunt d'utilitats de color per al disseny d'IU.</p>
     <p xml:lang="ca-valencia">Conjunt d'utilitats de color per al disseny d'IU.</p>
     <p xml:lang="es">Conjunto de utilidades de color para diseño de interfaces de usuario.</p>
+    <p xml:lang="fi">Joukko värityökaluja käyttöliittymäsuunnitteluun.</p>
     <p xml:lang="fr">Ensemble d'utilitaires de couleurs pour la conception de l'interface utilisateur.</p>
     <p xml:lang="gl">Conxunto de ferramentas de cores para o deseño de interfaces.</p>
     <p xml:lang="he">הגדרת כלי עזר לצבעים לעיצוב ממשק משתמש.</p>
