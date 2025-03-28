@@ -21,6 +21,7 @@
   <name xml:lang="uk">Paleta</name>
   <name xml:lang="x-test">xxPaletaxx</name>
   <name xml:lang="zh-CN">Paleta 颜色工具</name>
+  <name xml:lang="zh-TW">Paleta</name>
   <summary>Color utilities</summary>
   <summary xml:lang="ca">Utilitats de color</summary>
   <summary xml:lang="ca-valencia">Utilitats de color</summary>
@@ -39,6 +40,7 @@
   <summary xml:lang="uk">Інструменти кольору</summary>
   <summary xml:lang="x-test">xxColor utilitiesxx</summary>
   <summary xml:lang="zh-CN">颜色工具</summary>
+  <summary xml:lang="zh-TW">顏色工具</summary>
   <description>
     <p>Set of color utilities for UI design.</p>
     <p xml:lang="ca">Conjunt d'utilitats de color per al disseny d'IU.</p>
@@ -58,6 +60,7 @@
     <p xml:lang="uk">Набір інструментів кольору для розробки інтерфейсу користувача.</p>
     <p xml:lang="x-test">xxSet of color utilities for UI design.xx</p>
     <p xml:lang="zh-CN">为界面设计准备的颜色工具集。</p>
+    <p xml:lang="zh-TW">一些介面設計用的顏色工具。</p>
   </description>
   <url type="homepage">https://mauikit.org/</url>
   <screenshots>    
