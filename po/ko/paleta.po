@@ -1,0 +1,142 @@
+# Copyright (C) 2025 This file is copyright:
+# This file is distributed under the same license as the paleta package.
+# SPDX-FileCopyrightText: 2025 Shinjo Park <kde@peremen.name>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: paleta\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-02-26 00:40+0000\n"
+"PO-Revision-Date: 2025-04-07 00:40+0200\n"
+"Last-Translator: Shinjo Park <kde@peremen.name>\n"
+"Language-Team: Korean <kde-kr@kde.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 23.08.5\n"
+
+#: src/code/main.cpp:47
+#, kde-format
+msgid "Camilo Higuita"
+msgstr "Camilo Higuita"
+
+#: src/code/main.cpp:47
+#, kde-format
+msgid "Developer"
+msgstr "개발자"
+
+#: src/controls/ImagePage.qml:40
+#, kde-format
+msgid "Settings"
+msgstr "설정"
+
+#: src/controls/ImagePage.qml:46
+#, kde-format
+msgid "About"
+msgstr "정보"
+
+#: src/controls/ImagePage.qml:134
+#, kde-format
+msgid "Select"
+msgstr "선택"
+
+#: src/controls/ImagePage.qml:148
+#, kde-format
+msgid "Palette"
+msgstr "팔레트"
+
+#: src/controls/ImagePage.qml:168
+#, kde-format
+msgid "Copy"
+msgstr "복사"
+
+#: src/controls/ImagePage.qml:178
+#, kde-format
+msgid "Colors"
+msgstr "색상"
+
+#: src/controls/ImagePage.qml:188
+#, kde-format
+msgid "Background"
+msgstr "배경색"
+
+#: src/controls/ImagePage.qml:194
+#, kde-format
+msgid "Foreground"
+msgstr "글자색"
+
+#: src/controls/ImagePage.qml:201
+#, kde-format
+msgid "Dominant"
+msgstr "주 색상"
+
+#: src/controls/ImagePage.qml:208
+#, kde-format
+msgid "Highlight"
+msgstr "강조색"
+
+#: src/controls/ImagePage.qml:215
+#, kde-format
+msgid "Average"
+msgstr "평균"
+
+#: src/controls/ImagePage.qml:224
+#, kde-format
+msgid "Others"
+msgstr "기타"
+
+#: src/controls/ImagePage.qml:233
+#, kde-format
+msgid "Light"
+msgstr "밝음"
+
+#: src/controls/ImagePage.qml:239
+#, kde-format
+msgid "Dark"
+msgstr "어두움"
+
+#: src/controls/ImagePage.qml:250 src/controls/ImagePage.qml:296
+#, kde-format
+msgid "Contrast Ratio"
+msgstr "명암비"
+
+#: src/controls/ImagePage.qml:273
+#, kde-format
+msgid "Hello World! This is an example text."
+msgstr "안녕하세요! 이것은 예제 문자열입니다."
+
+#: src/controls/ImagePage.qml:285
+#, kde-format
+msgid ""
+"WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1 for normal "
+"text and 3:1 for large text. ."
+msgstr ""
+"WCAG 2.0 레벨 AA는 일반 문자열에 명암비 4.5:1, 큰 문자열에 명암비 3:1을 확보"
+"해야 합니다."
+
+#: src/controls/ImagePage.qml:311
+#, kde-format
+msgid "AA Small Text"
+msgstr "AA 작은 문자열"
+
+#: src/controls/ImagePage.qml:319
+#, kde-format
+msgid "AAA Small Text"
+msgstr "AAA 작은 문자열"
+
+#: src/controls/ImagePage.qml:328
+#, kde-format
+msgid "AA Large Text"
+msgstr "AA 큰 문자열"
+
+#: src/controls/ImagePage.qml:337
+#, kde-format
+msgid "AAA Large Text"
+msgstr "AAA 매우 큰 문자열"
+
+#: src/controls/ImagePage.qml:361
+#, kde-format
+msgid "Open..."
+msgstr "열기..."
