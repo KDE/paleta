@@ -12,6 +12,7 @@
   <name xml:lang="fr">Paleta</name>
   <name xml:lang="gl">Paleta</name>
   <name xml:lang="he">Paleta</name>
+  <name xml:lang="ia">Paleta</name>
   <name xml:lang="it">Paleta</name>
   <name xml:lang="ka">Paleta</name>
   <name xml:lang="ko">Paleta</name>
@@ -33,6 +34,7 @@
   <summary xml:lang="fr">Utilitaires de couleurs</summary>
   <summary xml:lang="gl">Ferramentas de cores</summary>
   <summary xml:lang="he">כלי עזר לצבעים</summary>
+  <summary xml:lang="ia">Utilitates de Color</summary>
   <summary xml:lang="it">Accessori per i colori</summary>
   <summary xml:lang="ka">ფერის ხელსაწყოები</summary>
   <summary xml:lang="ko">색상 유틸리티</summary>
@@ -55,6 +57,7 @@
     <p xml:lang="fr">Ensemble d'utilitaires de couleurs pour la conception de l'interface utilisateur.</p>
     <p xml:lang="gl">Conxunto de ferramentas de cores para o deseño de interfaces.</p>
     <p xml:lang="he">הגדרת כלי עזר לצבעים לעיצוב ממשק משתמש.</p>
+    <p xml:lang="ia">Assigna utilitates de colo per designo de UI</p>
     <p xml:lang="it">Insieme di accessori per i colori per la progettazione dell'interfaccia utente.</p>
     <p xml:lang="ka">ფერის ხელსაწყოების ნაკრები ინტერფეისის დიზაინისთვის.</p>
     <p xml:lang="ko">UI 디자인에 사용할 수 있는 색상 모음 유틸리티입니다.</p>
