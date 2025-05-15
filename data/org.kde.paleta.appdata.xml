@@ -4,6 +4,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LGPL-3.0</project_license>
   <name>Paleta</name>
+  <name xml:lang="ar">باليتا</name>
   <name xml:lang="ca">Paleta</name>
   <name xml:lang="ca-valencia">Paleta</name>
   <name xml:lang="es">Paleta</name>
@@ -26,6 +27,7 @@
   <name xml:lang="zh-CN">Paleta 颜色工具</name>
   <name xml:lang="zh-TW">Paleta</name>
   <summary>Color utilities</summary>
+  <summary xml:lang="ar">أدوات الألوان</summary>
   <summary xml:lang="ca">Utilitats de color</summary>
   <summary xml:lang="ca-valencia">Utilitats de color</summary>
   <summary xml:lang="es">Utilidades de color</summary>
@@ -49,6 +51,7 @@
   <summary xml:lang="zh-TW">顏色工具</summary>
   <description>
     <p>Set of color utilities for UI design.</p>
+    <p xml:lang="ar">مجموعة من الأدوات الألوان لتصميم واجهة المستخدم.</p>
     <p xml:lang="ca">Conjunt d'utilitats de color per al disseny d'IU.</p>
     <p xml:lang="ca-valencia">Conjunt d'utilitats de color per al disseny d'IU.</p>
     <p xml:lang="es">Conjunto de utilidades de color para diseño de interfaces de usuario.</p>
