@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Paleta
+Name[ar]=باليتا
 Name[ca]=Paleta
 Name[ca@valencia]=Paleta
 Name[es]=Paleta
@@ -22,6 +23,7 @@ Name[x-test]=xxPaletaxx
 Name[zh_CN]=Paleta 颜色工具
 Name[zh_TW]=Paleta
 Comment=Color utilities
+Comment[ar]=أدوات الألوان
 Comment[ca]=Utilitats de color
 Comment[ca@valencia]=Utilitats de color
 Comment[es]=Utilidades de color
@@ -48,6 +50,7 @@ Exec=paleta
 Terminal=false
 Type=Application
 GenericName=Colors
+GenericName[ar]=الألوان
 GenericName[ca]=Colors
 GenericName[ca@valencia]=Colors
 GenericName[es]=Colores
