@@ -2,6 +2,7 @@
 # German translation for paleta.
 # Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the paleta package.
+# SPDX-FileCopyrightText: 2025 Alois Spitzbart <spitz234@hotmail.com>
 # Automatically generated, 2025.
 #
 msgid ""
@@ -9,104 +10,105 @@ msgstr ""
 "Project-Id-Version: paleta\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:40+0000\n"
-"PO-Revision-Date: 2025-02-26 10:55+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-06-22 16:32+0200\n"
+"Last-Translator: Alois Spitzbart <spitz234@hotmail.com>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 25.07.70\n"
 
 #: src/code/main.cpp:47
 #, kde-format
 msgid "Camilo Higuita"
-msgstr ""
+msgstr "Camilo Higuita"
 
 #: src/code/main.cpp:47
 #, kde-format
 msgid "Developer"
-msgstr ""
+msgstr "Entwickler"
 
 #: src/controls/ImagePage.qml:40
 #, kde-format
 msgid "Settings"
-msgstr ""
+msgstr "Einstellungen"
 
 #: src/controls/ImagePage.qml:46
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "Über"
 
 #: src/controls/ImagePage.qml:134
 #, kde-format
 msgid "Select"
-msgstr ""
+msgstr "Auswählen"
 
 #: src/controls/ImagePage.qml:148
 #, kde-format
 msgid "Palette"
-msgstr ""
+msgstr "Palette"
 
 #: src/controls/ImagePage.qml:168
 #, kde-format
 msgid "Copy"
-msgstr ""
+msgstr "Kopieren"
 
 #: src/controls/ImagePage.qml:178
 #, kde-format
 msgid "Colors"
-msgstr ""
+msgstr "Farben"
 
 #: src/controls/ImagePage.qml:188
 #, kde-format
 msgid "Background"
-msgstr ""
+msgstr "Hintergrund"
 
 #: src/controls/ImagePage.qml:194
 #, kde-format
 msgid "Foreground"
-msgstr ""
+msgstr "Vordergrund"
 
 #: src/controls/ImagePage.qml:201
 #, kde-format
 msgid "Dominant"
-msgstr ""
+msgstr "Hauptfarbe"
 
 #: src/controls/ImagePage.qml:208
 #, kde-format
 msgid "Highlight"
-msgstr ""
+msgstr "Hervorhebung"
 
 #: src/controls/ImagePage.qml:215
 #, kde-format
 msgid "Average"
-msgstr ""
+msgstr "Durchschnitt"
 
 #: src/controls/ImagePage.qml:224
 #, kde-format
 msgid "Others"
-msgstr ""
+msgstr "Andere"
 
 #: src/controls/ImagePage.qml:233
 #, kde-format
 msgid "Light"
-msgstr ""
+msgstr "Hell"
 
 #: src/controls/ImagePage.qml:239
 #, kde-format
 msgid "Dark"
-msgstr ""
+msgstr "Dunkel"
 
 #: src/controls/ImagePage.qml:250 src/controls/ImagePage.qml:296
 #, kde-format
 msgid "Contrast Ratio"
-msgstr ""
+msgstr "Kontrastverhältnis"
 
 #: src/controls/ImagePage.qml:273
 #, kde-format
 msgid "Hello World! This is an example text."
-msgstr ""
+msgstr "Hallo Welt! Dies ist ein Beispieltext."
 
 #: src/controls/ImagePage.qml:285
 #, kde-format
@@ -114,28 +116,30 @@ msgid ""
 "WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1 for normal "
 "text and 3:1 for large text. ."
 msgstr ""
+"WCAG 2.0 Stufe AA verlangt ein Kontrastverhältnis von mindestens 4,5:1 für "
+"normalen Text und 3:1 für großen Text."
 
 #: src/controls/ImagePage.qml:311
 #, kde-format
 msgid "AA Small Text"
-msgstr ""
+msgstr "AA Kleiner Text"
 
 #: src/controls/ImagePage.qml:319
 #, kde-format
 msgid "AAA Small Text"
-msgstr ""
+msgstr "AAA Kleiner Text"
 
 #: src/controls/ImagePage.qml:328
 #, kde-format
 msgid "AA Large Text"
-msgstr ""
+msgstr "AA Großer Text"
 
 #: src/controls/ImagePage.qml:337
 #, kde-format
 msgid "AAA Large Text"
-msgstr ""
+msgstr "AAA Großer Text"
 
 #: src/controls/ImagePage.qml:361
 #, kde-format
 msgid "Open..."
-msgstr ""
+msgstr "Öffnen …"
