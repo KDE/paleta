@@ -7,6 +7,7 @@
   <name xml:lang="ar">باليتا</name>
   <name xml:lang="ca">Paleta</name>
   <name xml:lang="ca-valencia">Paleta</name>
+  <name xml:lang="de">Paleta</name>
   <name xml:lang="es">Paleta</name>
   <name xml:lang="eu">Paleta</name>
   <name xml:lang="fi">Paleta</name>
@@ -30,6 +31,7 @@
   <summary xml:lang="ar">أدوات الألوان</summary>
   <summary xml:lang="ca">Utilitats de color</summary>
   <summary xml:lang="ca-valencia">Utilitats de color</summary>
+  <summary xml:lang="de">Farbwerkzeuge</summary>
   <summary xml:lang="es">Utilidades de color</summary>
   <summary xml:lang="eu">Kolore erabilgarritasunak</summary>
   <summary xml:lang="fi">Värityökaluja</summary>
@@ -54,6 +56,7 @@
     <p xml:lang="ar">مجموعة من الأدوات الألوان لتصميم واجهة المستخدم.</p>
     <p xml:lang="ca">Conjunt d'utilitats de color per al disseny d'IU.</p>
     <p xml:lang="ca-valencia">Conjunt d'utilitats de color per al disseny d'IU.</p>
+    <p xml:lang="de">Eine Reihe von Farbwerkzeugen für das Gestalten von Benutzeroberflächen</p>
     <p xml:lang="es">Conjunto de utilidades de color para diseño de interfaces de usuario.</p>
     <p xml:lang="eu">EI diseinurako kolore erabilgarritasun multzoa.</p>
     <p xml:lang="fi">Joukko värityökaluja käyttöliittymäsuunnitteluun.</p>
