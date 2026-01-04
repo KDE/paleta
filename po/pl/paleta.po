@@ -1,112 +1,112 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2026 This file is copyright:
 # This file is distributed under the same license as the paleta package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SPDX-FileCopyrightText: 2026 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: paleta\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:51+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Irish Gaelic <kde-i18n-doc@kde.org>\n"
-"Language: ga\n"
+"PO-Revision-Date: 2026-01-03 14:18+0100\n"
+"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
+"Language-Team: pl\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n < 11 ? "
-"3 : 4\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 25.08.2\n"
 
 #: src/code/main.cpp:47
 #, kde-format
 msgid "Camilo Higuita"
-msgstr ""
+msgstr "Camilo Higuita"
 
 #: src/code/main.cpp:47
 #, kde-format
 msgid "Developer"
-msgstr ""
+msgstr "Programista"
 
 #: src/controls/ImagePage.qml:40
 #, kde-format
 msgid "Settings"
-msgstr ""
+msgstr "Ustawienia"
 
 #: src/controls/ImagePage.qml:46
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "O programie"
 
 #: src/controls/ImagePage.qml:134
 #, kde-format
 msgid "Select"
-msgstr ""
+msgstr "Wybierz"
 
 #: src/controls/ImagePage.qml:148
 #, kde-format
 msgid "Palette"
-msgstr ""
+msgstr "Paleta"
 
 #: src/controls/ImagePage.qml:168
 #, kde-format
 msgid "Copy"
-msgstr ""
+msgstr "Skopiuj"
 
 #: src/controls/ImagePage.qml:178
 #, kde-format
 msgid "Colors"
-msgstr ""
+msgstr "Kolory"
 
 #: src/controls/ImagePage.qml:188
 #, kde-format
 msgid "Background"
-msgstr ""
+msgstr "Drugi plan"
 
 #: src/controls/ImagePage.qml:194
 #, kde-format
 msgid "Foreground"
-msgstr ""
+msgstr "Pierwszy plan"
 
 #: src/controls/ImagePage.qml:201
 #, kde-format
 msgid "Dominant"
-msgstr ""
+msgstr "Dominanta"
 
 #: src/controls/ImagePage.qml:208
 #, kde-format
 msgid "Highlight"
-msgstr ""
+msgstr "Podświetlenie"
 
 #: src/controls/ImagePage.qml:215
 #, kde-format
 msgid "Average"
-msgstr ""
+msgstr "Średnia"
 
 #: src/controls/ImagePage.qml:224
 #, kde-format
 msgid "Others"
-msgstr ""
+msgstr "Inne"
 
 #: src/controls/ImagePage.qml:233
 #, kde-format
 msgid "Light"
-msgstr ""
+msgstr "Jasny"
 
 #: src/controls/ImagePage.qml:239
 #, kde-format
 msgid "Dark"
-msgstr ""
+msgstr "Ciemny"
 
 #: src/controls/ImagePage.qml:250 src/controls/ImagePage.qml:296
 #, kde-format
 msgid "Contrast Ratio"
-msgstr ""
+msgstr "Stosunek kontrastu"
 
 #: src/controls/ImagePage.qml:273
 #, kde-format
 msgid "Hello World! This is an example text."
-msgstr ""
+msgstr "Witaj Świecie! Oto przykładowy tekst."
 
 #: src/controls/ImagePage.qml:285
 #, kde-format
@@ -114,28 +114,30 @@ msgid ""
 "WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1 for normal "
 "text and 3:1 for large text. ."
 msgstr ""
+"WCAG 2.0 poziom AA wymaga stosunku kontrastu co najmniej 4.5:1 dla zwykłego "
+"tekstu oraz 3:1 dla dużego tekstu. ."
 
 #: src/controls/ImagePage.qml:311
 #, kde-format
 msgid "AA Small Text"
-msgstr ""
+msgstr "AA Mały Tekst"
 
 #: src/controls/ImagePage.qml:319
 #, kde-format
 msgid "AAA Small Text"
-msgstr ""
+msgstr "AAA Mały Tekst"
 
 #: src/controls/ImagePage.qml:328
 #, kde-format
 msgid "AA Large Text"
-msgstr ""
+msgstr "AA Duży Tekst"
 
 #: src/controls/ImagePage.qml:337
 #, kde-format
 msgid "AAA Large Text"
-msgstr ""
+msgstr "AAA Duży Tekst"
 
 #: src/controls/ImagePage.qml:361
 #, kde-format
 msgid "Open..."
-msgstr ""
+msgstr "Otwórz…"
