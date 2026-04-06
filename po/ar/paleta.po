@@ -106,7 +106,7 @@ msgstr "معدل التباين"
 #: src/controls/ImagePage.qml:273
 #, kde-format
 msgid "Hello World! This is an example text."
-msgstr "مرحباً بالعالم! هذا مثال نصي."
+msgstr "مرحبًا بالعالم! هذا مثال نصي."
 
 #: src/controls/ImagePage.qml:285
 #, kde-format
