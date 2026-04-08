@@ -1,15 +1,16 @@
 # Copyright (C) 2026 This file is copyright:
 # This file is distributed under the same license as the paleta package.
 # SPDX-FileCopyrightText: 2026 Vít Pelčák <vit@pelcak.org>
+# SPDX-FileCopyrightText: 2026 Libor Filípek <filipek.libor@protonmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: paleta\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:51+0000\n"
-"PO-Revision-Date: 2026-03-17 08:34+0100\n"
-"Last-Translator:  Vít Pelčák <vit@pelcak.org>\n"
-"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2026-04-07 21:26+0200\n"
+"Last-Translator: Libor Filípek <filipek.libor@protonmail.com>\n"
+"Language-Team: \n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -70,7 +71,7 @@ msgstr "Popředí"
 #: src/controls/ImagePage.qml:201
 #, kde-format
 msgid "Dominant"
-msgstr ""
+msgstr "Dominantní"
 
 #: src/controls/ImagePage.qml:208
 #, kde-format
@@ -105,7 +106,7 @@ msgstr "Kontrastní poměr"
 #: src/controls/ImagePage.qml:273
 #, kde-format
 msgid "Hello World! This is an example text."
-msgstr ""
+msgstr "Ahoj, světe! Toto je ukázkový text."
 
 #: src/controls/ImagePage.qml:285
 #, kde-format
@@ -113,6 +114,8 @@ msgid ""
 "WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1 for normal "
 "text and 3:1 for large text. ."
 msgstr ""
+"WCAG 2.0 úroveň AA vyžaduje kontrastní poměr minimálně 4,5:1 u běžného textu "
+"a 3:1 u zvětšeného textu."
 
 #: src/controls/ImagePage.qml:311
 #, kde-format
