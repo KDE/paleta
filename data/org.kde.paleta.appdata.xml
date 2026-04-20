@@ -35,6 +35,7 @@
   <summary xml:lang="ar">أدوات الألوان</summary>
   <summary xml:lang="ca">Utilitats de color</summary>
   <summary xml:lang="ca-valencia">Utilitats de color</summary>
+  <summary xml:lang="cs">Nástroje pro práci s barvami</summary>
   <summary xml:lang="de">Farbwerkzeuge</summary>
   <summary xml:lang="es">Utilidades de color</summary>
   <summary xml:lang="eu">Kolore erabilgarritasunak</summary>
@@ -63,6 +64,7 @@
     <p xml:lang="ar">مجموعة من الأدوات الألوان لتصميم واجهة المستخدم.</p>
     <p xml:lang="ca">Conjunt d'utilitats de color per al disseny d'IU.</p>
     <p xml:lang="ca-valencia">Conjunt d'utilitats de color per al disseny d'IU.</p>
+    <p xml:lang="cs">Sada nástrojů pro práci s barvami určených pro návrh uživatelského rozhraní.</p>
     <p xml:lang="de">Eine Reihe von Farbwerkzeugen für das Gestalten von Benutzeroberflächen</p>
     <p xml:lang="es">Conjunto de utilidades de color para diseño de interfaces de usuario.</p>
     <p xml:lang="eu">EI diseinurako kolore erabilgarritasun multzoa.</p>
