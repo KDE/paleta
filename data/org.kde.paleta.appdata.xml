@@ -28,6 +28,7 @@
   <name xml:lang="sl">Paleta</name>
   <name xml:lang="sv">Paleta</name>
   <name xml:lang="tr">Paleta</name>
+  <name xml:lang="ug">Paleta</name>
   <name xml:lang="uk">Paleta</name>
   <name xml:lang="zh-CN">Paleta 颜色工具</name>
   <name xml:lang="zh-TW">Paleta</name>
@@ -56,6 +57,7 @@
   <summary xml:lang="sl">Pripomočki za barve</summary>
   <summary xml:lang="sv">Färgverktyg</summary>
   <summary xml:lang="tr">Renk izlenceleri</summary>
+  <summary xml:lang="ug">رەڭ قورالى</summary>
   <summary xml:lang="uk">Інструменти кольору</summary>
   <summary xml:lang="zh-CN">颜色工具</summary>
   <summary xml:lang="zh-TW">顏色工具</summary>
@@ -85,6 +87,7 @@
     <p xml:lang="sl">Zbir pripomočkov za barve za design uporabniškega vmesnika.</p>
     <p xml:lang="sv">En uppsättning färgverktyg för konstruktion av användargränssnitt.</p>
     <p xml:lang="tr">Arayüz tasarımı için renk izlenceleri takımı</p>
+    <p xml:lang="ug">ئارايۈز لايىھەسىىڭ رەڭ قورال توپلىمى.</p>
     <p xml:lang="uk">Набір інструментів кольору для розробки інтерфейсу користувача.</p>
     <p xml:lang="zh-CN">为界面设计准备的颜色工具集。</p>
     <p xml:lang="zh-TW">一些介面設計用的顏色工具。</p>
