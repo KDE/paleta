@@ -1,0 +1,145 @@
+# Translation of paleta to Norwegian Nynorsk
+#
+# SPDX-FileCopyrightText: 2026 Karl Ove Hufthammer <karl@huftis.org>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: paleta\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-11-17 11:51+0000\n"
+"PO-Revision-Date: 2026-07-06 20:49+0200\n"
+"Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
+"Language-Team: Norwegian Nynorsk <l10n-no@nuug.no>\n"
+"Language: nn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 26.11.70\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#: src/code/main.cpp:47
+#, kde-format
+msgid "Camilo Higuita"
+msgstr "Camilo Higuita"
+
+#: src/code/main.cpp:47
+#, kde-format
+msgid "Developer"
+msgstr "Utviklar"
+
+#: src/controls/ImagePage.qml:40
+#, kde-format
+msgid "Settings"
+msgstr "Innstillingar"
+
+#: src/controls/ImagePage.qml:46
+#, kde-format
+msgid "About"
+msgstr "Om"
+
+#: src/controls/ImagePage.qml:134
+#, kde-format
+msgid "Select"
+msgstr "Vel"
+
+#: src/controls/ImagePage.qml:148
+#, kde-format
+msgid "Palette"
+msgstr "Palett"
+
+#: src/controls/ImagePage.qml:168
+#, kde-format
+msgid "Copy"
+msgstr "Kopier"
+
+#: src/controls/ImagePage.qml:178
+#, kde-format
+msgid "Colors"
+msgstr "Fargar"
+
+#: src/controls/ImagePage.qml:188
+#, kde-format
+msgid "Background"
+msgstr "Bakgrunn"
+
+#: src/controls/ImagePage.qml:194
+#, kde-format
+msgid "Foreground"
+msgstr "Framgrunn"
+
+#: src/controls/ImagePage.qml:201
+#, kde-format
+msgid "Dominant"
+msgstr "Dominant"
+
+#: src/controls/ImagePage.qml:208
+#, kde-format
+msgid "Highlight"
+msgstr "Høglys"
+
+#: src/controls/ImagePage.qml:215
+#, kde-format
+msgid "Average"
+msgstr "Gjennomsnitt"
+
+#: src/controls/ImagePage.qml:224
+#, kde-format
+msgid "Others"
+msgstr "Andre"
+
+#: src/controls/ImagePage.qml:233
+#, kde-format
+msgid "Light"
+msgstr "Lys"
+
+#: src/controls/ImagePage.qml:239
+#, kde-format
+msgid "Dark"
+msgstr "Mørke"
+
+#: src/controls/ImagePage.qml:250 src/controls/ImagePage.qml:296
+#, kde-format
+msgid "Contrast Ratio"
+msgstr "Kontrastforhold"
+
+#: src/controls/ImagePage.qml:273
+#, kde-format
+msgid "Hello World! This is an example text."
+msgstr "Hei, verda! Her er eksempeltekst."
+
+#: src/controls/ImagePage.qml:285
+#, kde-format
+msgid ""
+"WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1 for normal "
+"text and 3:1 for large text. ."
+msgstr ""
+"WCAG 2.0 nivå AA krev konstrast­forhold på minst 4,5:1 for vanleg tekst og "
+"3:1 for stor tekst."
+
+#: src/controls/ImagePage.qml:311
+#, kde-format
+msgid "AA Small Text"
+msgstr "AA liten tekst"
+
+#: src/controls/ImagePage.qml:319
+#, kde-format
+msgid "AAA Small Text"
+msgstr "AAA liten tekst"
+
+#: src/controls/ImagePage.qml:328
+#, kde-format
+msgid "AA Large Text"
+msgstr "AA stor tekst"
+
+#: src/controls/ImagePage.qml:337
+#, kde-format
+msgid "AAA Large Text"
+msgstr "AAA stor tekst"
+
+#: src/controls/ImagePage.qml:361
+#, kde-format
+msgid "Open..."
+msgstr "Opna …"
