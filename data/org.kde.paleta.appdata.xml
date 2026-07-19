@@ -21,6 +21,7 @@
   <name xml:lang="ko">Paleta</name>
   <name xml:lang="lv">Paleta</name>
   <name xml:lang="nl">Paleta</name>
+  <name xml:lang="nn">Paleta</name>
   <name xml:lang="pl">Paleta</name>
   <name xml:lang="pt-BR">Paleta</name>
   <name xml:lang="ro">Paleta</name>
@@ -50,6 +51,7 @@
   <summary xml:lang="ko">색상 유틸리티</summary>
   <summary xml:lang="lv">Krāsu utilītprogrammas</summary>
   <summary xml:lang="nl">Hulpmiddelen voor kleur</summary>
+  <summary xml:lang="nn">Fargeverktøy</summary>
   <summary xml:lang="pl">Narzędzia kolorów</summary>
   <summary xml:lang="pt-BR">Utilitários de cor</summary>
   <summary xml:lang="ro">Utilitare de culoare</summary>
@@ -80,6 +82,7 @@
     <p xml:lang="ko">UI 디자인에 사용할 수 있는 색상 모음 유틸리티입니다.</p>
     <p xml:lang="lv">Krāsu utilītprogrammu komplekts saskarnes izstrādei.</p>
     <p xml:lang="nl">Set van hulpmiddelen voor kleur voor ontwerpen van UI.</p>
+    <p xml:lang="nn">Fargeverktøy med brukarflatedesign.</p>
     <p xml:lang="pl">Zestaw narzędzi kolorów do projektowania interfejsów.</p>
     <p xml:lang="pt-BR">Conjunto de utilitários de cores para design de interface de usuário.</p>
     <p xml:lang="ro">Set de utilitare de culoare pentru proiectarea interfețelor grafice.</p>
